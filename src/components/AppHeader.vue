@@ -15,15 +15,17 @@ const officePages = [
   { label: "Oslo", url: "/oslo" },
   { label: "Copenhagen", url: "/copenhagen" },
   { label: "Berlin", url: "/berlin" },
-  { label: "Krakow", url: "/krakow" },
+  { label: "Kraków", url: "/krakow" },
   { label: "Katowice", url: "/katowice" },
 ];
 </script>
 
 <template>
   <header class="bg-black flex justify-between items-center h-[72px] px-16">
-    <ForteLogo />
-    <div class="flex gap-12 h-full items-center">
+    <router-link to="/">
+      <ForteLogo />
+    </router-link>
+    <div class="flex gap-10 h-full items-center">
       <HeaderMenu label="Chateau de Buros" :items="chateauPages" />
       <HeaderMenu label="Offices" :items="officePages" />
       <router-link

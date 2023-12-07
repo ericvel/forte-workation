@@ -15,7 +15,7 @@ defineProps<{ label: string; items: MenuItem[] }>();
   <Menu>
     <Float placement="bottom">
       <MenuButton
-        class="h-full text-grey-light flex items-center gap-x-2 px-2 hover:bg-black-dull transition"
+        class="h-full text-grey-light flex items-center gap-x-2 px-4 hover:bg-black-dull transition"
       >
         <span class="">{{ label }}</span>
         <vue-feather type="chevron-down" />
