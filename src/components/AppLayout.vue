@@ -5,7 +5,7 @@ import AppHeader from "./AppHeader.vue";
 <template>
   <div class="AppLayout">
     <AppHeader />
-    <main class="p-4">
+    <main class="p-16">
       <slot />
     </main>
   </div>

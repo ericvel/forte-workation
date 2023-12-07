@@ -1,10 +1,8 @@
 <script setup lang="ts">
-// @ts-expect-error
 import osloImg from "@/assets/oslo.jpg";
-// @ts-expect-error
 import berlinImg from "@/assets/berlin.jpg";
-// @ts-expect-error
 import krakowImg from "@/assets/krakow.jpg";
+
 interface CityItem {
   name: string;
   image: string;
