@@ -19,6 +19,6 @@ import krakowImg from "@/assets/krakow_big.jpg";
         >Book your stay in Kraków</router-link
       >
     </div>
-    <img :src="krakowImg" alt="Krakow office employees having fun" class="object-contain shrink" />
+    <img :src="krakowImg" alt="Krakow office employees having fun" class="object-contain" />
   </div>
 </template>

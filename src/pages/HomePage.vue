@@ -34,13 +34,15 @@ const items: CityItem[] = [
     <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-20">
       <router-link v-for="item in items" :key="item.url" :to="item.url">
         <div
-          :style="{
-            backgroundImage: 'url(' + item.image + ')',
-            backgroundSize: '100% 100%',
-          }"
-          class="h-64 w-64 flex justify-center items-center transition hover:shadow-2xl"
+          class="h-64 w-64 flex justify-center items-center transition hover:shadow-2xl relative group overflow-hidden"
         >
-          <p class="font-nova-cut text-white text-[3.5rem]">
+          <img
+            :src="item.image"
+            alt="Krakow office employees having fun"
+            class="object-contain w-full h-full group-hover:scale-110 transition duration-200 ease-in-out brightness-75"
+            aria-hidden="true"
+          />
+          <p class="font-nova-cut text-white text-[3.5rem] absolute shadow-2xl">
             {{ item.name }}
           </p>
         </div>
