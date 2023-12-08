@@ -39,7 +39,7 @@ const items: CityItem[] = [
           <img
             :src="item.image"
             alt="Krakow office employees having fun"
-            class="object-contain w-full h-full group-hover:scale-110 transition duration-200 ease-in-out brightness-75"
+            class="object-contain w-full h-full group-hover:scale-110 transition duration-200 ease-in-out brightness-75 group-hover:brightness-90"
             aria-hidden="true"
           />
           <p class="font-nova-cut text-white text-[3.5rem] absolute shadow-2xl">

@@ -30,7 +30,7 @@ const officePages = [
       <HeaderMenu label="Offices" :items="officePages" />
       <router-link
         to="/booking"
-        class="text-grey-light border-2 border-white px-5 py-1 h-fit hover:bg-black-dull active:bg-grey transition"
+        class="text-grey-light border-2 border-white px-5 hover:bg-black-dull active:bg-grey transition leading-8"
       >
         Book your stay
       </router-link>
