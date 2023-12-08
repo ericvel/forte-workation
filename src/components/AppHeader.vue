@@ -21,7 +21,9 @@ const officePages = [
 </script>
 
 <template>
-  <header class="bg-black flex justify-between items-center h-[72px] px-16">
+  <header
+    class="bg-black flex justify-between items-center h-[72px] px-16 text-xl"
+  >
     <router-link to="/">
       <ForteLogo />
     </router-link>
@@ -30,7 +32,7 @@ const officePages = [
       <HeaderMenu label="Offices" :items="officePages" />
       <router-link
         to="/booking"
-        class="text-grey-light border-2 border-white px-5 hover:bg-black-dull active:bg-grey transition leading-8"
+        class="text-grey-light border-2 border-white px-5 hover:bg-black-dull active:bg-grey transition py-1"
       >
         Book your stay
       </router-link>

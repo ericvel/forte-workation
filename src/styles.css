@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  @apply font-roboto font-normal text-xl;
+  @apply font-roboto font-normal text-black;
 }

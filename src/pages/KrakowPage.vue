@@ -3,7 +3,7 @@ import krakowImg from "@/assets/krakow_big.jpg";
 </script>
 
 <template>
-  <div class="flex gap-16 my-16 flex-col lg:flex-row">
+  <div class="flex gap-16 my-16 flex-col lg:flex-row text-xl">
     <div>
       <h1 class="text-5xl mb-10">Forte Kraków</h1>
       <p class="mb-6">
@@ -19,6 +19,10 @@ import krakowImg from "@/assets/krakow_big.jpg";
         >Book your stay in Kraków</router-link
       >
     </div>
-    <img :src="krakowImg" alt="Krakow office employees having fun" class="object-contain" />
+    <img
+      :src="krakowImg"
+      alt="Krakow office employees having fun"
+      class="object-contain"
+    />
   </div>
 </template>
