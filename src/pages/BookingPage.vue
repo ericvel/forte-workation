@@ -8,6 +8,10 @@ const name = ref("");
 const phoneNumber = ref("");
 const email = ref("");
 const otherInquiries = ref("");
+
+const handleSend = () => {
+  alert("Your application has been submitted. We will contact you soon!");
+};
 </script>
 
 <template>
@@ -19,6 +23,24 @@ const otherInquiries = ref("");
     </p>
 
     <form class="flex flex-col gap-y-14">
+      <TextField
+        v-model="countryToVisit"
+        id="countryToVisit"
+        label="Select country you want to visit"
+        variant="select"
+      />
+      <TextField
+        v-model="countryOfOrigin"
+        id="countryOfOrigin"
+        label="Select country you usually work in"
+        variant="select"
+      />
+      <TextField
+        v-model="date"
+        id="date"
+        label="Select date"
+        variant="date"
+      />
       <TextField v-model="name" id="name" label="Name" />
       <TextField v-model="phoneNumber" id="phoneNumber" label="Phone number" />
       <TextField v-model="email" id="email" label="E-mail" />
@@ -26,7 +48,7 @@ const otherInquiries = ref("");
         v-model="otherInquiries"
         id="otherInquiries"
         label="Other inquiries"
-        text-area
+        variant="area"
       />
       <div class="flex gap-x-6 items-center">
         <input type="checkbox" id="contact-checkbox" class="w-6 h-6" />
@@ -34,6 +56,13 @@ const otherInquiries = ref("");
           I want people to know that I am coming to this office.
         </label>
       </div>
+      <button
+        class="bg-grey px-8 py-3 text-white leading-10 text-2xl w-fit hover:bg-black-dull active:bg-black transition"
+        type="button"
+        @click="handleSend"
+      >
+        Send application
+      </button>
     </form>
   </div>
 </template>
