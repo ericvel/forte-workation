@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import TextField from "@/components/TextField.vue";
+import DropDown from "@/components/DropDown.vue";
 const countryToVisit = ref("");
 const countryOfOrigin = ref("");
 const date = ref("");
@@ -35,12 +36,7 @@ const handleSend = () => {
         label="Select country you usually work in"
         variant="select"
       />
-      <TextField
-        v-model="date"
-        id="date"
-        label="Select date"
-        variant="date"
-      />
+      <TextField v-model="date" id="date" label="Select date" variant="date" />
       <TextField v-model="name" id="name" label="Name" />
       <TextField v-model="phoneNumber" id="phoneNumber" label="Phone number" />
       <TextField v-model="email" id="email" label="E-mail" />
